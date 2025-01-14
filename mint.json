@@ -79,7 +79,7 @@
       "pages": [
         "api-reference/endpoint/call-logs",
         "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/summary"
       ]
     }
   ],
