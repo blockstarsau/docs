@@ -1,6 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "CallX",
+  "api": {
+    "baseUrl": "https://app.callx.io/api/v1"
+  },
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,7 +21,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:callx@blockstars.com.au"
     }
   ],
   "topbarCtaButton": {
@@ -31,41 +34,30 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
       "group": "Essentials",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
+        "essentials/numbers",
+        "essentials/assistants",
+        "essentials/tools",
+        "essentials/topup",
+        "essentials/api",
         "essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "Additional",
+      "pages": [
+        "additional/webhooks",
+        "additional/integrations"
       ]
     },
     {
@@ -75,17 +67,19 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
         "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/summary",
+        "api-reference/endpoint/transcriptions",
+        "api-reference/endpoint/call-logs"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/Callx_io",
+    "linkedin": "https://www.linkedin.com/company/104785454/admin/dashboard/",
+    "youtube": "https://www.youtube.com/@Callx_io",
+    "instagram": "https://www.instagram.com/callx.io/"
   }
 }
