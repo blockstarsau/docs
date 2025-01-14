@@ -233,29 +233,6 @@
             "get": {
                 "operationId": "getCallLogs",
                 "description": "Retrieves a list of call logs.",
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "required": true,
-                        "description": "The ID of the call log",
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "format",
-                        "in": "query",
-                        "required": false,
-                        "description": "Response format (text for plain text, omit for JSON)",
-                        "schema": {
-                            "type": "string",
-                            "enum": [
-                                "text"
-                            ]
-                        }
-                    }
-                ],
                 "responses": {
                     "200": {
                         "description": "Call logs retrieved successfully.",
