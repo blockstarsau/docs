@@ -1,24 +1,24 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "OpenAPI Plant Store",
-    "description": "A sample API that uses a plant store as an example to demonstrate features in the OpenAPI specification",
-    "license": {
-      "name": "MIT"
+    "openapi": "3.0.1",
+    "info": {
+        "title": "OpenAPI CallX",
+        "description": "An API that Handles outbound calls and customer interactions",
+        "license": {
+            "name": "MIT"
+        },
+        "version": "1.0.0"
     },
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "https://app.callx.io/api/v1"
-    }
-  ],
-  "security": [
-    {
-      "bearerAuth": []
-    }
-  ],
-  "paths": {
+    "servers": [
+        {
+            "url": "https://app.callx.io/api/v1"
+        }
+    ],
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
+    "paths": {
         "/api/v1/calls": {
             "post": {
                 "description": "Creates a new outbound call in the callX",
