@@ -279,6 +279,18 @@
   },
   "components": {
     "schemas": {
+    "Customer": {
+                "type": "object",
+                "required": [
+                    "number"
+                ],
+                "properties": {
+                    "number": {
+                        "type": "string",
+                        "description": "Customer's phone number in international format"
+                    }
+                }
+            },
       "NewCall": {
                 "type": "object",
                 "required": [
