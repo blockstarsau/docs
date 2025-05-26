@@ -324,7 +324,7 @@
                       },
                       "example": "completed"
                   }
-              ]
+              ],
                 "responses": {
                     "200": {
                         "description": "Call logs retrieved successfully.",
