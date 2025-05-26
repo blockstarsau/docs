@@ -233,6 +233,98 @@
             "get": {
                 "operationId": "getCallLogs",
                 "description": "Retrieves a list of call logs.",
+                "parameters": [
+    {
+        "name": "startDate",
+        "in": "query",
+        "required": false,
+        "description": "The start date for filtering results (YYYY-MM-DD format)",
+        "schema": {
+            "type": "string",
+            "format": "date"
+        },
+        "example": "2025-05-26"
+    },
+    {
+        "name": "endDate",
+        "in": "query",
+        "required": false,
+        "description": "The end date for filtering results (YYYY-MM-DD format)",
+        "schema": {
+            "type": "string",
+            "format": "date"
+        },
+        "example": "2025-05-31"
+    },
+    {
+        "name": "page",
+        "in": "query",
+        "required": false,
+        "description": "Page number for pagination",
+        "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "default": 1
+        },
+        "example": 5
+    },
+    {
+        "name": "pageSize",
+        "in": "query",
+        "required": false,
+        "description": "Number of items per page",
+        "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+        },
+        "example": 10
+    },
+    {
+        "name": "search",
+        "in": "query",
+        "required": false,
+        "description": "Search query to filter results",
+        "schema": {
+            "type": "string"
+        },
+        "example": "customer inquiry"
+    },
+    {
+        "name": "type",
+        "in": "query",
+        "required": false,
+        "description": "Type of interaction to filter by",
+        "schema": {
+            "type": "string",
+            "enum": ["inbound", "outbound"]
+        },
+        "example": "inbound"
+    },
+    {
+        "name": "assistant",
+        "in": "query",
+        "required": false,
+        "description": "Assistant ID to filter results by specific assistant",
+        "schema": {
+            "type": "string"
+        },
+        "example": "673bb5b4ce3a3f78867da8c2"
+    },
+    {
+        "name": "endedReason",
+        "in": "query",
+        "required": false,
+        "description": "Reason for how the interaction ended",
+        "schema": {
+            "type": "string",
+            "enum": ["call-in-progress", "user-hung-up", "silence-timed-out", "error", "exceeded-max-duration", "assistant-ended-call", "assistant-low-balance", 
+            "assistant-not-found", "assistant-forwarded-error", "no-answer", "busy", "failed"]
+        },
+        "example": "completed"
+    }
+]
                 "responses": {
                     "200": {
                         "description": "Call logs retrieved successfully.",
